@@ -2,15 +2,15 @@ package structsMethodsInterfaces
 
 import "testing"
 
-// func TestPerimeter(t *testing.T) {
-// 	rectangle := Rectangle{10.0, 10.0}
-// 	got := Perimeter(rectangle)
-// 	want := 40.0
+func TestPerimeter(t *testing.T) {
+	rectangle := Rectangle{10.0, 10.0}
+	got := rectangle.Perimeter()
+	want := 40.0
 
-// 	if got != want {
-// 		t.Errorf("got %2.f want %.2f", got, want)
-// 	}
-// }
+	if got != want {
+		t.Errorf("got %2.f want %.2f", got, want)
+	}
+}
 
 func TestArea(t *testing.T) {
 
